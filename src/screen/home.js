@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import "../style/hm.css";
+import "../style/hm2.css";
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from "react-responsive-carousel";
 
 import serImg1 from "../asset/img_ser_1.svg";
 import serImg2 from "../asset/img_ser_2.svg";
@@ -35,6 +39,23 @@ export default class HomeScreen extends Component {
     { title: "Latest Technology Training", src: serImg6 },
   ];
 
+  carosil = [
+    {
+      title0: "DESIGN AND BUILD YOUR",
+      title1: "TECHNOLOGY TEAM",
+      title2: "WITH PERFECTZ DIGITAL",
+      desc: "We create value for our clients by creating value for their customers.",
+      src: "",
+    },
+    {
+      title0: "IT TALENTS",
+      title1: "ON-DEMAND",
+      title2: "WITH PERFECTZ DIGITAL",
+      desc: "We know that you can't build a company with innovation alone, you also need IT talent to deliver products.",
+      src: "",
+    },
+  ];
+
   tech = [
     stackImg1,
     stackImg2,
@@ -67,26 +88,34 @@ export default class HomeScreen extends Component {
           {/* //////////////////TOP BODY///////////////// */}
           {/* //////////////////TOP BODY///////////////// */}
           <div className="hmB">
-            <div className="hmBa">
-              <div className="hmBb">
-                <div className="hmBc">Design and Build your</div>
-                <div className="hmBd">Technology Team</div>
-                <div className="hmBe">with Perfectz Digital</div>
-                <div className="hmBf">
-                  Lorem ipsum dolor sit amet, consectetur adipi scing elit.
-                  Porttitor in nulla posuere pellentesque posuere. Duis velscing
-                  elit, scing.
+            <Carousel
+              autoPlay
+              swipeable={false}
+              showArrows={false}
+              showStatus={false}
+              infiniteLoop
+            >
+              {this.carosil.map((it, k) => (
+                <div key={k} className="hmBa">
+                  <div className="hmBb">
+                    <div className="hmBc">{it.title0}</div>
+                    <div className="hmBc">{it.title1}</div>
+                    <div className="hmBc">{it.title2}</div>
+                    {/* <div className="hmBd">Technology Team</div>
+                    <div className="hmBe">with Perfectz Digital</div> */}
+                    <div className="hmBf">{it.desc}</div>
+                    <div className="hmAb">
+                      <div className="hmAc">OUR SERVICES</div>
+                      <div className="hmAd" />
+                    </div>
+                    <div className="hmBg">
+                      <div className="hmBgA" />
+                    </div>
+                  </div>
+                  <div className="hmBh" />
                 </div>
-                <div className="hmAb">
-                  <div className="hmAc">OUR SERVICES</div>
-                  <div className="hmAd" />
-                </div>
-                <div className="hmBg">
-                  <div className="hmBgA" />
-                </div>
-              </div>
-              <div className="hmBh" />
-            </div>
+              ))}
+            </Carousel>
             <div className="hmBi">Our Services</div>
             <div className="hmBj">
               <div className="hmBjA" />
@@ -119,22 +148,24 @@ export default class HomeScreen extends Component {
           {/* //////////////////// LATEST TECHNOLAGY //////////////////// */}
           {/* //////////////////// LATEST TECHNOLAGY //////////////////// */}
           <div className="hmC">
-          <div className="hmC-bg1" />
-            <div className="hmCa" />
-            <div className="hmCb">
-              <div className="hmCc">LATEST TECHNOLOGY</div>
-              <div className="hmCd">TRAINING PROGRAM</div>
-              <div className="hmCe">
-                We continuously seek exceptional associates when recruiting new
-                employees to us and we provide all sort of training programme to
-                improve the inter-personal skills of each candidates we hire.
+            <div className="hmC_">
+              <div className="hmCa" />
+              <div className="hmCb">
+                <div className="hmCc">LATEST TECHNOLOGY</div>
+                <div className="hmCd">TRAINING PROGRAM</div>
+                <div className="hmCe">
+                  We continuously seek exceptional associates when recruiting
+                  new employees to us and we provide all sort of training
+                  programme to improve the inter-personal skills of each
+                  candidates we hire.
+                </div>
+                <div className="hmCf">
+                  {this.tech.map((item, k) => (
+                    <img className="hmCg" key={k} src={item} />
+                  ))}
+                </div>
+                <div className="hmCh">DISCOVER MORE</div>
               </div>
-              <div className="hmCf">
-                {this.tech.map((item, k) => (
-                  <img className="hmCg" key={k} src={item} />
-                ))}
-              </div>
-              <div className="hmCh">DISCOVER MORE</div>
             </div>
           </div>
           {/* ////////////////////// TECH STACK ///////////////////// */}

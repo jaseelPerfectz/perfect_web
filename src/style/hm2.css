@@ -1,0 +1,206 @@
+@media only screen and (max-width: 600px) {
+  .hmA {
+    justify-content: center;
+  }
+  .hmAb {
+    display: none;
+  }
+  .hmBb {
+    width: auto;
+  }
+  .hmBa {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .hmBc {
+    font-size: 26px;
+    text-align: left;
+    line-height: 38px;
+  }
+  .hmBf {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .hmBg {
+    display: none;
+  }
+  .hmBh {
+    width: 100%;
+    height: 45vh;
+  }
+  .hmBj {
+    flex-direction: column;
+    margin-top: 9px;
+  }
+  .hmBi {
+    font-size: 28px;
+  }
+  .hmBjA {
+    width: 100%;
+    height: 88vw;
+    background-size: 90%;
+  }
+  .hmBjB {
+    width: 75%;
+  }
+  .hmBk {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 350px;
+  }
+  .hmBkA {
+    margin-left: 10%;
+  }
+  .hmBkC {
+    display: none;
+  }
+  .hmBkD {
+    font-size: 22px;
+  }
+  .hmBkE {
+    display: none;
+  }
+  /* ////////////////////////////////////////// */
+  /* ////////////////////////////////////////// */
+  /* ////////////////////////////////////////// */
+  .hmC {
+    background-position: 0vw 0px;
+  }
+  .hmC_ {
+    background-position: 0vw 0px;
+    flex-direction: column;
+    padding-top: 10px;
+    padding: 0px 4vw;
+  }
+  .hmCb {
+    width: 100%;
+  }
+  .hmCa {
+    display: none;
+  }
+  .hmCc {
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .hmCd {
+    font-size: 28px;
+  }
+  .hmCf {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 0px 5%;
+  }
+  .hmCg{
+    margin-bottom: 5px;
+  }
+  /* ////////////////////////////////////////// */
+  /* ////////////////////////////////////////// */
+  /* ////////////////////////////////////////// */
+  /* ////////////////////////////////////////// */
+  .hmD {
+    padding: 20px 0px;
+    align-items: center;
+  }
+  .hmDa {
+    font-size: 28px;
+  }
+  .hmDc {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    margin-left: 0%;
+  }
+  .hmDb {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hmDd {
+    width: 100%;
+    margin-left: 6%;
+  }
+  .hmDf {
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+  }
+  .hmDg {
+    width: 322px;
+  }
+  .hmDh {
+    width: 322px;
+  }
+  .hmDi {
+    display: none;
+  }
+  .hmDj {
+    display: none;
+  }
+  /* /////////////////////////////////////// */
+  /* /////////////////////////////////////// */
+  /* /////////////////////////////////////// */
+  /* /////////////////////////////////////// */
+  .hmE {
+    height: 350px;
+  }
+  .hmEa {
+    display: none;
+  }
+  .hmEc {
+    font-size: 28px;
+  }
+  /* //////////////////////////////////////// */
+  /* //////////////////////////////////////// */
+  /* //////////////////////////////////////// */
+  /* //////////////////////////////////////// */
+  .hmF {
+    height: 500px;
+  }
+  .hmFa {
+    height: 30vw;
+    background-size: cover;
+  }
+  .hmFb {
+    font-size: 22px;
+  }
+  .hmFc {
+    font-size: 16px;
+  }
+  .hmFa {
+    width: 70%;
+  }
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  .hmG {
+    display: none;
+  }
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  /* ///////////////////////////////////////// */
+  .hmH {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .hmHa {
+    width: 90%;
+    padding: 0px 5%;
+    height: 482px;
+  }
+  .hmHb {
+    margin-bottom: 15px;
+  }
+  .hmHh {
+    width: 100%;
+  }
+  .hmHi {
+    display: none;
+  }
+  .hmHj {
+    height: 398px;
+    padding: 0px 10%;
+  }
+}

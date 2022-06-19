@@ -124,7 +124,7 @@ export default class HomeScreen extends Component {
                 <div>
                   {this.set.map((item, k) => (
                     <div key={k} className="hmBjE">
-                      <img className="hmBjEa" src={item.src} />
+                      <img alt="" className="hmBjEa" src={item.src} />
                       <div className="hmBjEb">{item.title}</div>
                     </div>
                   ))}
@@ -153,15 +153,14 @@ export default class HomeScreen extends Component {
               <div className="hmCb">
                 <div className="hmCc">LATEST TECHNOLOGY</div>
                 <div className="hmCd">TRAINING PROGRAM</div>
+                <div className="hmCa_" />
                 <div className="hmCe">
-                  We continuously seek exceptional associates when recruiting
-                  new employees to us and we provide all sort of training
-                  programme to improve the inter-personal skills of each
-                  candidates we hire.
+                  Join our fast growing global team to unleash your full
+                  potential.
                 </div>
                 <div className="hmCf">
                   {this.tech.map((item, k) => (
-                    <img className="hmCg" key={k} src={item} />
+                    <img alt="" className="hmCg" key={k} src={item} />
                   ))}
                 </div>
                 <div className="hmCh">DISCOVER MORE</div>
@@ -181,21 +180,21 @@ export default class HomeScreen extends Component {
               </div>
               <div className="hmDd">
                 <div className="hmDe">
-                  <img className="hmDf" src={stackImg1} />
-                  <img className="hmDf" src={stackImg2} />
-                  <img className="hmDf" src={stackImg3} />
+                  <img alt="" className="hmDf" src={stackImg1} />
+                  <img alt="" className="hmDf" src={stackImg2} />
+                  <img alt="" className="hmDf" src={stackImg3} />
                 </div>
                 <div className="hmDg" />
                 <div className="hmDe">
-                  <img className="hmDf" src={stackImg4} />
-                  <img className="hmDf" src={stackImg5} />
-                  <img className="hmDf" src={stackImg6} />
+                  <img alt="" className="hmDf" src={stackImg4} />
+                  <img alt="" className="hmDf" src={stackImg5} />
+                  <img alt="" className="hmDf" src={stackImg6} />
                 </div>
                 <div className="hmDh" />
                 <div className="hmDe">
-                  <img className="hmDf" src={stackImg7} />
-                  <img className="hmDf" src={stackImg8} />
-                  <img className="hmDf" src={stackImg9} />
+                  <img alt="" className="hmDf" src={stackImg7} />
+                  <img alt="" className="hmDf" src={stackImg8} />
+                  <img alt="" className="hmDf" src={stackImg9} />
                 </div>
               </div>
               <div className="hmDi" />
@@ -255,6 +254,26 @@ export default class HomeScreen extends Component {
               <img className="hmGd" alt="img" src={clImg5} />
               <div className="hmGe" />
               <img className="hmGd" alt="img" src={clImg6} />
+            </div>
+            <div className="hmGg">
+              <div className="hmGgA">
+                <img className="hmGgB" alt="img" src={clImg1} />
+              </div>
+              <div className="hmGgA">
+                <img className="hmGgB" alt="img" src={clImg2} />
+              </div>
+              <div className="hmGgA">
+                <img className="hmGgB" alt="img" src={clImg3} />
+              </div>
+              <div className="hmGgA">
+                <img className="hmGgB" alt="img" src={clImg4} />
+              </div>
+              <div className="hmGgA">
+                <img className="hmGgB" alt="img" src={clImg5} />
+              </div>
+              <div className="hmGgA">
+                <img className="hmGgB" alt="img" src={clImg6} />
+              </div>
             </div>
           </div>
           {/* ////////////////////// CONTACT ///////////////////// */}

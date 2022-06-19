@@ -259,6 +259,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.hmCa_ {
+  display: none;
+  /* width: 46%; */
+  height: 100vw;
+  background-image: url(../asset/img_pic_4.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .hmCb {
   width: 45%;
 }
@@ -514,6 +523,9 @@
   width: 1170px;
   height: 1px;
   background-color: #727272;
+}
+.hmGg {
+  display: none;
 }
 /* /////////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////////// */

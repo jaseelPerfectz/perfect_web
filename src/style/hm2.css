@@ -69,8 +69,11 @@
   .hmC_ {
     background-position: 0vw 0px;
     flex-direction: column;
-    padding-top: 10px;
     padding: 0px 4vw;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: auto;
+    background-position: -50vw 0px;
   }
   .hmCb {
     width: 100%;
@@ -78,12 +81,17 @@
   .hmCa {
     display: none;
   }
+  .hmCa_ {
+    display: flex;
+  }
   .hmCc {
     font-size: 28px;
     margin-top: 20px;
+    text-align: center;
   }
   .hmCd {
     font-size: 28px;
+    text-align: center;
   }
   .hmCf {
     justify-content: center;
@@ -91,7 +99,7 @@
     width: 90%;
     padding: 0px 5%;
   }
-  .hmCg{
+  .hmCg {
     margin-bottom: 5px;
   }
   /* ////////////////////////////////////////// */
@@ -174,9 +182,51 @@
   /* ///////////////////////////////////////// */
   /* ///////////////////////////////////////// */
   /* ///////////////////////////////////////// */
-  .hmG {
+  .hmGc,
+  .hmGf {
     display: none;
   }
+  .hmG {
+    height: auto;
+  }
+  .hmGa {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  .hmGb {
+    margin-bottom: 20px;
+  }
+  .hmGg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8%;
+  }
+  .hmGgA {
+    width: calc(50% - 2px);
+    height: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #727272; */
+  }
+  .hmGgA:nth-child(2n) {
+    border-left: 1px solid #727272;
+    border-bottom: 1px solid #727272;
+  }
+  .hmGgA:nth-child(1n) {
+    border-bottom: 1px solid #727272;
+  }
+  .hmGgA:nth-child(5) {
+    border-bottom: none;
+  }
+  .hmGgA:nth-child(6) {
+    border-bottom: none;
+  }
+  .hmGgB {
+    width: 90%;
+  }
+
   /* ///////////////////////////////////////// */
   /* ///////////////////////////////////////// */
   /* ///////////////////////////////////////// */

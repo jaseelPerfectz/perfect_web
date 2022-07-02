@@ -180,7 +180,7 @@
 .hmB_aAb {
   font-weight: 800;
   font-size: 42px;
-  /* padding-bottom: 20px; */
+  padding-bottom: 20px;
 }
 .hmB_aAc {
   font-weight: 400;
@@ -306,7 +306,14 @@
 }
 .hmCd {
   font-size: 42px;
-  font-weight: bold;
+  font-weight: 800;
+  background: linear-gradient(
+    to right,
+    #4200ff 30%,
+    #de9500 50%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hmCe {
   color: #00000099;

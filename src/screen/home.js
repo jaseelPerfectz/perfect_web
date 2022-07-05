@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useRef } from "react";
 import "../style/hm.css";
 import "../style/hm2.css";
 
@@ -69,6 +69,9 @@ export default class HomeScreen extends Component {
   ];
 
   render() {
+    const contacrRef = React.createRef(null);
+    const moveToContact = () =>
+      contacrRef.current?.scrollIntoView({ behavior: "smooth" });
     return (
       <div className="hm">
         <div className="hm_">
@@ -79,7 +82,7 @@ export default class HomeScreen extends Component {
           {/*////////////////////////////////////////////////////HEADER///////////////////////////////////////////////////// */}
           <div className="hmA">
             <div className="hmAa" />
-            <div className="hmAb">
+            <div className="hmAb" onClick={moveToContact}>
               <div className="hmAc">CONTACT US</div>
               <div className="hmAd" />
             </div>
@@ -104,12 +107,12 @@ export default class HomeScreen extends Component {
                     <div className="hmBc">{it.title1}</div>
                     <div className="hmBc">{it.title2}</div>
                     <div className="hmBf">{it.desc}</div>
-                    <div className="hmAb">
+                    <div className="hmAb" onClick={moveToContact}>
                       <div className="hmAc">OUR SERVICES</div>
                       <div className="hmAd" />
                     </div>
                     <div className="hmBg">
-                      <div className="hmBgA" />
+                      {/* <div className="hmBgA" /> */}
                     </div>
                   </div>
                   <div className="hmBh" />
@@ -158,7 +161,9 @@ export default class HomeScreen extends Component {
                 We work in partnership with our clients to build high
                 performance teams
               </div>
-              <div className="hmB_bC">Know more</div>
+              <div className="hmB_bC" onClick={moveToContact}>
+                Know more
+              </div>
             </div>
             <div className="hmB_bE" />
           </div>
@@ -183,7 +188,9 @@ export default class HomeScreen extends Component {
                     <img alt="" className="hmCg" key={k} src={item} />
                   ))}
                 </div>
-                <div className="hmCh">DISCOVER MORE</div>
+                <div className="hmCh" onClick={moveToContact}>
+                  DISCOVER MORE
+                </div>
               </div>
             </div>
           </div>
@@ -217,9 +224,9 @@ export default class HomeScreen extends Component {
                   <img alt="" className="hmDf" src={stackImg8} />
                   <img alt="" className="hmDf" src={stackImg9} />
                 </div>
+                <div className="hmDi" />
+                <div className="hmDj" />
               </div>
-              <div className="hmDi" />
-              <div className="hmDj" />
             </div>
           </div>
           {/*//////////////////////////////////////////////////////// TECH STACK ///////////////////////////////////////////////////////// */}
@@ -234,7 +241,9 @@ export default class HomeScreen extends Component {
                 We are here to provide Talents-on-Demand to create High
                 Performance Teams (HPTs)
               </div>
-              <div className="hmEd">LET’S WORK TOGETHER</div>
+              <div className="hmEd" onClick={moveToContact}>
+                LET’S WORK TOGETHER
+              </div>
             </div>
           </div>
           {/*//////////////////////////////////////////////////////// REFRESH ///////////////////////////////////////////////////////// */}
@@ -251,7 +260,9 @@ export default class HomeScreen extends Component {
               We believe “Mobile first design” principle is the core of any
               product design.
             </div>
-            <div className="hmFd">KNOW MORE</div>
+            <div className="hmFd" onClick={moveToContact}>
+              KNOW MORE
+            </div>
           </div>
           {/*//////////////////////////////////////////////////////// CLINTS ///////////////////////////////////////////////////////// */}
           {/*//////////////////////////////////////////////////////// CLINTS ///////////////////////////////////////////////////////// */}
@@ -305,7 +316,7 @@ export default class HomeScreen extends Component {
           {/*//////////////////////////////////////////////////////// CONTACT ///////////////////////////////////////////////////////// */}
           {/*//////////////////////////////////////////////////////// CONTACT ///////////////////////////////////////////////////////// */}
           {/*//////////////////////////////////////////////////////// CONTACT ///////////////////////////////////////////////////////// */}
-          <div className="hmH">
+          <div className="hmH" ref={contacrRef}>
             <div className="hmHa">
               <div className="hmHb">CONTACT US</div>
               <input className="hmHc" placeholder="Full Name" />

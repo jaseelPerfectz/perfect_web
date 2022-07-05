@@ -24,6 +24,7 @@
   background-image: url(../asset/img_logo.svg);
 }
 .hmAb {
+  transition: 1s;
   width: 149px;
   height: 40px;
   background: rgba(255, 255, 255, 0.08);
@@ -31,6 +32,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+.hmAb:hover {
+  transition: 0.2s;
+  background: rgba(255, 255, 255, 0.15);
 }
 .hmAc {
   font-size: 14px;
@@ -143,26 +149,33 @@
   -webkit-text-fill-color: transparent;
 }
 .hmB_bC {
+  transition: 0.2s;
   font-size: 14px;
   padding: 10px 16px;
   border-radius: 10px;
   color: white;
   border: 1px solid white;
+  cursor: pointer;
+}
+.hmB_bC:hover {
+  transition: 0.1s;
+  padding: 9px 15px;
+  border: 2px solid white;
 }
 .hmB_bD {
-  max-width: 408px;
+  max-width: 80%;
   padding: 40px 0px;
   color: white;
   font-size: 38px;
 }
 .hmB_bE,
 .hmB_bE_mob {
-  width: 50%;
+  width: 70%;
   height: 350px;
   background-image: url(../asset/img_pic_3.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position: right;
 }
 .hmB_bE_mob {
   display: none;
@@ -339,12 +352,19 @@
   margin-right: 6px;
 }
 .hmCh {
+  transition: 0.2s;
   color: #2c1c00;
   padding: 10px 16px;
   border-radius: 16px;
   width: 146px;
   border: 1px solid #7c7567;
   margin-top: 40px;
+  cursor: pointer;
+}
+.hmCh:hover {
+  transition: 0.1s;
+  padding: 9px 15px;
+  border: 2px solid #7c7567;
 }
 /* ///////////////////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////////// */
@@ -353,12 +373,12 @@
 /* ///////////////////////////////////////////////////////////////////// */
 .hmD {
   background-color: #000000;
-  padding: 80px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url(../asset/bg_img_3.svg);
   background-size: cover;
+  padding: 80px 8vw;
 }
 .hmDa {
   padding-bottom: 54px;
@@ -378,17 +398,18 @@
 .hmDb {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .hmDc {
-  width: 300px;
+  width: 45%;
   font-size: 32px;
   color: #fdcd00;
   font-weight: 700;
-  margin-left: -10%;
+  padding-right: 10%;
 }
 .hmDd {
   width: 470px;
-  margin-left: 25%;
+  position: relative;
 }
 .hmDe {
   display: flex;
@@ -409,19 +430,18 @@
   margin-left: -25px;
   background-color: gray;
 }
-.hmDi {
-  width: 1px;
-  height: 340px;
-  background-color: gray;
-  margin-left: -28%;
-  margin-top: 50px;
-}
+.hmDi,
 .hmDj {
   width: 1px;
   height: 340px;
   background-color: gray;
-  margin-left: -16%;
-  margin-top: -30px;
+  position: absolute;
+  top: 0px;
+  left: 125px;
+}
+.hmDj {
+  top: 50px;
+  left: 255px;
 }
 /* ./////////////////////////./////////////./////////////. */
 /* ./////////////////////////./////////////./////////////. */
@@ -443,7 +463,7 @@
   /* background-size: contain; */
 }
 .hmEb {
-  width: 40%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -452,7 +472,7 @@
 .hmEc {
   font-size: 40px;
   font-weight: bold;
-  width: 339px;
+  width: 80%;
   background: linear-gradient(
     to right,
     #be9233 4.82%,
@@ -473,6 +493,13 @@
   border: 1px solid #ffffff;
   border-radius: 16px;
   color: white;
+  cursor: pointer;
+}
+.hmEd:hover {
+  transition: 0.1s;
+  padding: 9px 15px;
+  width: 188px;
+  border: 2px solid #ffffff;
 }
 /* /////////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////////// */
@@ -517,6 +544,12 @@
   padding: 10px 16px;
   border: 1px solid #7c7567;
   border-radius: 16px;
+  cursor: pointer;
+}
+.hmFd:hover {
+  transition: 0.1s;
+  padding: 9px 15px;
+  border: 2px solid #7c7567;
 }
 /* /////////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////////////// */

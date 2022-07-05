@@ -224,7 +224,7 @@
 }
 .hmB_aBa {
   font-size: 44px;
-  font-weight: bold;
+  font-weight: 500;
   padding: 50px;
   background: linear-gradient(
     to right,
@@ -244,6 +244,7 @@
   flex-wrap: wrap;
 }
 .hmB_aCa {
+  transition: 0.1s;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,11 +252,19 @@
   width: 25vw;
   height: 250px;
   box-shadow: 0px 12px 24px 2px rgba(0, 0, 0, 0.08);
+  margin: 2.5px 0.5vw;
   margin-bottom: 30px;
   border-radius: 20px;
   background-image: url(../asset/bg_img_9.png);
   background-size: cover;
   background-repeat: no-repeat;
+}
+.hmB_aCa:hover {
+  transition: 0.1s;
+  width: 26vw;
+  height: 255px;
+  margin: 0px 0vw;
+  margin-bottom: 27.5px;
 }
 .hmB_aCa:nth-child(1) {
   background-color: #ecfaff;

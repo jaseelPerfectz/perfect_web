@@ -286,8 +286,8 @@ export default class HomeScreen extends Component {
           <div className="hmG">
             <div className="hmGa">Our Clients</div>
             <div className="hmGb">
-              Lorem Ipsum dolar sit amat der satone recoredsaw yetorsrtatew
-              dresgrete utireds
+              {/* Lorem Ipsum dolar sit amat der satone recoredsaw yetorsrtatew
+              dresgrete utireds */}
             </div>
             <div className="hmGc">
               <img className="hmGd" alt="img" src={clImg1} />

@@ -135,7 +135,7 @@ export default class HomeScreen extends Component {
             </div>
             <div className="hmB_aB">
               <div className="hmB_aBa">Our Services</div>
-            </  div>
+            </div>
             <div className="hmB_aC">
               {this.set.map((it) => (
                 <div className="hmB_aCa">
@@ -153,13 +153,14 @@ export default class HomeScreen extends Component {
           <div className="hmB_b">
             <div className="hmB_bA">
               <div className="hmB_bB">hello.</div>
+              <div className="hmB_bE_mob" />
               <div className="hmB_bD">
                 We work in partnership with our clients to build high
                 performance teams
               </div>
               <div className="hmB_bC">Know more</div>
             </div>
-            <div className="hmB_bE"></div>
+            <div className="hmB_bE" />
           </div>
           {/*//////////////////////////////////////////////////// LATEST TECHNOLAGY ////////////////////////////////////////////////////////// */}
           {/*//////////////////////////////////////////////////// LATEST TECHNOLAGY ////////////////////////////////////////////////////////// */}
@@ -230,7 +231,8 @@ export default class HomeScreen extends Component {
             <div className="hmEa"></div>
             <div className="hmEb">
               <div className="hmEc">
-              We are here to provide Talents-on-Demand to create High Performance Teams (HPTs)
+                We are here to provide Talents-on-Demand to create High
+                Performance Teams (HPTs)
               </div>
               <div className="hmEd">LET’S WORK TOGETHER</div>
             </div>
@@ -287,7 +289,7 @@ export default class HomeScreen extends Component {
               <div className="hmGgA">
                 <img className="hmGgB" alt="img" src={clImg3} />
               </div>
-              <div className="hmGgA">
+              {/* <div className="hmGgA">
                 <img className="hmGgB" alt="img" src={clImg4} />
               </div>
               <div className="hmGgA">
@@ -295,7 +297,7 @@ export default class HomeScreen extends Component {
               </div>
               <div className="hmGgA">
                 <img className="hmGgB" alt="img" src={clImg6} />
-              </div>
+              </div> */}
             </div>
           </div>
           {/*//////////////////////////////////////////////////////// CONTACT ///////////////////////////////////////////////////////// */}

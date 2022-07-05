@@ -119,7 +119,9 @@
   padding: 0px 16vw;
   min-height: 600px;
   background-color: black;
+  width: 76vw;
 }
+
 .hmB_bA {
   display: flex;
   flex-direction: column;
@@ -153,13 +155,19 @@
   color: white;
   font-size: 38px;
 }
-.hmB_bE {
+.hmB_bE,
+.hmB_bE_mob {
   width: 50%;
   height: 350px;
   background-image: url(../asset/img_pic_3.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+.hmB_bE_mob {
+  display: none;
+  height: 70vw;
+  width: 100%;
 }
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -231,6 +239,9 @@
   box-shadow: 0px 12px 24px 2px rgba(0, 0, 0, 0.08);
   margin-bottom: 30px;
   border-radius: 20px;
+  background-image: url(../asset/bg_img_9.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .hmB_aCa:nth-child(1) {
   background-color: #ecfaff;
@@ -307,11 +318,7 @@
 .hmCd {
   font-size: 42px;
   font-weight: 800;
-  background: linear-gradient(
-    to right,
-    #4200ff 30%,
-    #de9500 50%
-  );
+  background: linear-gradient(to right, #4200ff 30%, #de9500 50%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -424,8 +431,8 @@
   display: flex;
   height: 644px;
   background-color: #000000;
-  background-image: url(../asset/bg_img_5.png);
-  background-size: cover;
+  /* background-image: url(../asset/bg_img_5.png);
+  background-size: cover; */
 }
 .hmEa {
   width: 60%;

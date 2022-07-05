@@ -740,7 +740,7 @@
   display: flex;
   align-items: center;
   width: 230px;
-  justify-content: space-between;
+  justify-content: start;
 }
 .hmHoA {
   font-size: 14px;
@@ -753,6 +753,7 @@
   background-image: url(../asset/ic_m.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
 }
 .hmHoC {
   height: 24px;
@@ -760,6 +761,7 @@
   background-image: url(../asset/ic_twit.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
 }
 .hmHoD {
   height: 24px;
@@ -767,6 +769,7 @@
   background-image: url(../asset/ic_in.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
 }
 .hmHoE {
   height: 24px;
@@ -774,6 +777,7 @@
   background-image: url(../asset/ic_q.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
 }
 .hmHp {
   height: 20px;

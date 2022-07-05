@@ -358,10 +358,13 @@ export default class HomeScreen extends Component {
                   </div>
                   <div className="hmHo">
                     <div className="hmHoA">Follow Us</div>
-                    <div className="hmHoB" />
-                    <div className="hmHoC" />
-                    <div className="hmHoD" />
-                    <div className="hmHoE" />
+                    <div
+                      className="hmHoD"
+                      onClick={() => window.open("https://www.linkedin.com/company/perfectz-digital/")}
+                    />
+                    {/* <div className="hmHoB" /> */}
+                    {/* <div className="hmHoC" /> */}
+                    {/* <div className="hmHoE" /> */}
                   </div>
                 </div>
                 <div className="hmHp">© Copyright 2022 | Perfectz Digital</div>

@@ -66,6 +66,7 @@
     padding: 20px;
     margin: 0px;
     padding-top: 30px;
+    width: calc(100vw - 40px);
   }
   .hmB_bB {
     font-size: 42px;

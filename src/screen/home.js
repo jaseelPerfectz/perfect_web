@@ -29,6 +29,10 @@ import clImg4 from "../asset/img_cl_4.png";
 import clImg5 from "../asset/img_cl_5.png";
 import clImg6 from "../asset/img_cl_6.png";
 
+import carosil0 from "../asset/img_pic_1.svg";
+import carosil1 from "../asset/carosil1.webp";
+import carosil2 from "../asset/carosil2.png";
+
 export default class HomeScreen extends Component {
   set = [
     { title: "Tech Transformation", src: serImg1 },
@@ -41,18 +45,25 @@ export default class HomeScreen extends Component {
 
   carosil = [
     {
-      title0: "DESIGN AND BUILD YOUR",
-      title1: "TECHNOLOGY TEAM",
-      title2: "WITH PERFECTZ DIGITAL",
-      desc: "We create value for our clients by creating value for their customers.",
-      src: "",
+      title0: "DESIGN AND BUILD YOUR TECHNOLOGY TEAM",
+      // title1: "TECHNOLOGY TEAM",
+      // title2: "WITH PERFECTZ DIGITAL",
+      desc: "The magic happens when we work together.",
+      src: carosil0,
     },
     {
-      title0: "IT TALENTS",
-      title1: "ON-DEMAND",
-      title2: "WITH PERFECTZ DIGITAL",
+      title0: "WE HELP TRANSFORM",
+      // title1: "Technology Stack Transformation",
+      // title2: "",
+      desc: "Technology Stack Transformation",
+      src: carosil1,
+    },
+    {
+      title0: "IT TALENTS ON-DEMAND",
+      // title1: "ON-DEMAND",
+      // title2: " ",
       desc: "We know that you can't build a company with innovation alone, you also need IT talent to deliver products.",
-      src: "",
+      src: carosil2,
     },
   ];
 
@@ -104,8 +115,8 @@ export default class HomeScreen extends Component {
                 <div key={k} className="hmBa">
                   <div className="hmBb">
                     <div className="hmBc">{it.title0}</div>
-                    <div className="hmBc">{it.title1}</div>
-                    <div className="hmBc">{it.title2}</div>
+                    {/* <div className="hmBc">{it.title1}</div>
+                    <div className="hmBc">{it.title2}</div> */}
                     <div className="hmBf">{it.desc}</div>
                     <div className="hmAb" onClick={moveToContact}>
                       <div className="hmAc">OUR SERVICES</div>
@@ -115,7 +126,10 @@ export default class HomeScreen extends Component {
                       {/* <div className="hmBgA" /> */}
                     </div>
                   </div>
-                  <div className="hmBh" />
+                  <div
+                    className="hmBh"
+                    style={{ backgroundImage: `url(${it.src})` }}
+                  />
                 </div>
               ))}
             </Carousel>

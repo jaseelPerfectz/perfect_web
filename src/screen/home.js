@@ -1,4 +1,4 @@
-import React, { Component, useRef } from "react";
+import React, { Component } from "react";
 import "../style/hm.css";
 import "../style/hm2.css";
 
@@ -29,8 +29,8 @@ import clImg4 from "../asset/img_cl_4.png";
 import clImg5 from "../asset/img_cl_5.png";
 import clImg6 from "../asset/img_cl_6.png";
 
-import carosil0 from "../asset/img_pic_1.svg";
-import carosil1 from "../asset/carosil1.webp";
+import carosil0 from "../asset/heroslider-1.png";
+import carosil1 from "../asset/heroslider-2.png";
 import carosil2 from "../asset/carosil2.png";
 
 export default class HomeScreen extends Component {
@@ -360,7 +360,11 @@ export default class HomeScreen extends Component {
                     <div className="hmHoA">Follow Us</div>
                     <div
                       className="hmHoD"
-                      onClick={() => window.open("https://www.linkedin.com/company/perfectz-digital/")}
+                      onClick={() =>
+                        window.open(
+                          "https://www.linkedin.com/company/perfectz-digital/"
+                        )
+                      }
                     />
                     {/* <div className="hmHoB" /> */}
                     {/* <div className="hmHoC" /> */}

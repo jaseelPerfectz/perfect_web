@@ -7,5 +7,5 @@ export default function App() {
 
 
 // git add .
-// git commit -m "first commit"
+// git commit -m "Currection"
 // git push origin main

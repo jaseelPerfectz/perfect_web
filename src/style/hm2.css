@@ -227,13 +227,17 @@
   /* /////////////////////////////////////// */
   /* /////////////////////////////////////// */
   .hmE {
-    height: 350px;
+    flex-direction: column;
+    height: auto;
+    padding: 10vw 0;
   }
   .hmEa {
-    display: none;
+    width: 80vw;
+    height: 65vw;
+    display: flex;
   }
   .hmEb {
-    width: 100%;
+    width: 90%;
   }
   .hmEc {
     font-size: 28px;

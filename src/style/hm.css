@@ -468,8 +468,9 @@
   width: 60%;
   background-image: url(../asset/bg_img_4.svg);
   background-repeat: no-repeat;
-  background-size: 500px;
+  background-size: contain;
   background-position: center;
+  margin: 5vw 0; 
   /* background-size: contain; */
 }
 .hmEb {
@@ -708,32 +709,42 @@
 }
 .hmHk {
   height: 30px;
-  background-image: url(../asset/img_logo_2.svg);
+  background-image: url(../asset/img_logo2.svg);
   background-repeat: no-repeat;
   background-size: contain;
   margin-bottom: 35px;
 }
 .hmHl {
-  display: flex;
-  padding-top: 15px;
-}
-.hmHm {
-  height: 22px;
-  width: 30px;
-  background-image: url(../asset/ic_flag.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.hmHm-2 {
-  height: 22px;
-  width: 30px;
-  background-image: url(../asset/ic_mail.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.hmHn {
+  padding-top: 24px;
+  font-weight: 600;
   font-size: 14px;
-  line-height: 20px;
+}
+.hmHlA {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.hmHlB,
+.hmHlB1,
+.hmHlB2 {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+  background-image: url(../asset/ic_flat.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.hmHlB1 {
+  background-image: url(../asset/ic_gate.svg);
+}
+.hmHlB2 {
+  background-image: url(../asset/ic_mail.svg);
+  width: 24px;
+  height: 24px;
+}
+.hmHlC {
+  font-weight: 400;
 }
 .hmHo {
   margin-top: 40px;
@@ -746,41 +757,18 @@
   font-size: 14px;
   font-weight: bold;
   padding-right: 20px;
-}
-.hmHoB {
-  height: 24px;
-  width: 30px;
-  background-image: url(../asset/ic_m.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-}
-.hmHoC {
-  height: 24px;
-  width: 30px;
-  background-image: url(../asset/ic_twit.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
+  padding-bottom: 2px;
 }
 .hmHoD {
   height: 24px;
-  width: 30px;
+  width: 72px;
   background-image: url(../asset/ic_in.svg);
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
 }
-.hmHoE {
-  height: 24px;
-  width: 30px;
-  background-image: url(../asset/ic_q.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  cursor: pointer;
-}
 .hmHp {
-  height: 20px;
+  height: 18px;
   padding: 12px 32px;
   color: white;
   font-size: 14px;

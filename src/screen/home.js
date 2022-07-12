@@ -25,9 +25,6 @@ import stackImg9 from "../asset/img_stack_9.svg";
 import clImg1 from "../asset/img_cl_1.png";
 import clImg2 from "../asset/img_cl_2.png";
 import clImg3 from "../asset/img_cl_3.png";
-import clImg4 from "../asset/img_cl_4.png";
-import clImg5 from "../asset/img_cl_5.png";
-import clImg6 from "../asset/img_cl_6.png";
 
 import carosil0 from "../asset/heroslider-1.png";
 import carosil1 from "../asset/heroslider-2.png";
@@ -115,8 +112,6 @@ export default class HomeScreen extends Component {
                 <div key={k} className="hmBa">
                   <div className="hmBb">
                     <div className="hmBc">{it.title0}</div>
-                    {/* <div className="hmBc">{it.title1}</div>
-                    <div className="hmBc">{it.title2}</div> */}
                     <div className="hmBf">{it.desc}</div>
                     <div className="hmAb" onClick={moveToContact}>
                       <div className="hmAc">OUR SERVICES</div>
@@ -249,7 +244,7 @@ export default class HomeScreen extends Component {
           {/*//////////////////////////////////////////////////////// TECH STACK ///////////////////////////////////////////////////////// */}
           {/*//////////////////////////////////////////////////////// TECH STACK ///////////////////////////////////////////////////////// */}
           <div className="hmE">
-            <div className="hmEa"></div>
+            <div className="hmEa" />
             <div className="hmEb">
               <div className="hmEc">
                 We are here to provide Talents-on-Demand to create High
@@ -296,14 +291,6 @@ export default class HomeScreen extends Component {
               <div className="hmGe" />
               <img className="hmGd" alt="img" src={clImg3} />
             </div>
-            {/* <div className="hmGf" /> */}
-            {/* <div className="hmGc">
-              <img className="hmGd" alt="img" src={clImg4} />
-              <div className="hmGe" />
-              <img className="hmGd" alt="img" src={clImg5} />
-              <div className="hmGe" />
-              <img className="hmGd" alt="img" src={clImg6} />
-            </div> */}
             <div className="hmGg">
               <div className="hmGgA">
                 <img className="hmGgB" alt="img" src={clImg1} />
@@ -314,15 +301,6 @@ export default class HomeScreen extends Component {
               <div className="hmGgA">
                 <img className="hmGgB" alt="img" src={clImg3} />
               </div>
-              {/* <div className="hmGgA">
-                <img className="hmGgB" alt="img" src={clImg4} />
-              </div>
-              <div className="hmGgA">
-                <img className="hmGgB" alt="img" src={clImg5} />
-              </div>
-              <div className="hmGgA">
-                <img className="hmGgB" alt="img" src={clImg6} />
-              </div> */}
             </div>
           </div>
           {/*//////////////////////////////////////////////////////// CONTACT ///////////////////////////////////////////////////////// */}
@@ -345,16 +323,30 @@ export default class HomeScreen extends Component {
                 <div className="hmHj">
                   <div className="hmHk" />
                   <div className="hmHl">
-                    <div className="hmHm" />
-                    <div className="hmHn">
-                      Sharjah Publishing City Free Zone,
-                      <br />
-                      P.O Box 73111, UAE
+                    Locations:
+                    <div className="hmHlA">
+                      <div className="hmHlB" />
+                      <div className="hmHlC">
+                        Sharjah Publishing City Free Zone,
+                        <br />
+                        P.O Box 73111, UAE
+                      </div>
+                    </div>
+                    <div className="hmHlA">
+                      <div className="hmHlB1" />
+                      <div className="hmHlC">
+                        Ds Max Sterling, Bangalore 87,
+                        <br />
+                        Karnataka, INDIA.
+                      </div>
                     </div>
                   </div>
                   <div className="hmHl">
-                    <div className="hmHm-2" />
-                    <div className="hmHn">hello@perfectzdigital.com</div>
+                    Email:
+                    <div className="hmHlA">
+                      <div className="hmHlB2" />
+                      <div className="hmHlC">hello@perfectzdigital.com</div>
+                    </div>
                   </div>
                   <div className="hmHo">
                     <div className="hmHoA">Follow Us</div>
@@ -366,9 +358,6 @@ export default class HomeScreen extends Component {
                         )
                       }
                     />
-                    {/* <div className="hmHoB" /> */}
-                    {/* <div className="hmHoC" /> */}
-                    {/* <div className="hmHoE" /> */}
                   </div>
                 </div>
                 <div className="hmHp">© Copyright 2022 | Perfectz Digital</div>

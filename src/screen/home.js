@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../style/hm.css";
-import "../style/hm2.css";
+import "../style/hm1.css";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -312,7 +312,7 @@ export default class HomeScreen extends Component {
             <div className="hmHa">
               <div className="hmHb">CONTACT US</div>
               <input className="hmHc" placeholder="Full Name" />
-              <input className="hmHc" placeholder="Phone Number" />
+              <input className="hmHc" placeholder="Email ID" />
               <input className="hmHc" placeholder="Phone Number" />
               <textarea className="hmHd" placeholder="Message" />
               <button className="hmHg">SEND ENQUIRY</button>

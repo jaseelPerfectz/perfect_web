@@ -4,7 +4,7 @@ import "../style/hm1.css";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 import serImg1 from "../asset/img_ser_1.svg";
 import serImg2 from "../asset/img_ser_2.svg";
@@ -32,27 +32,26 @@ import carosil1 from "../asset/heroslider-2.png";
 import carosil2 from "../asset/carosil2.png";
 
 export default class HomeScreen extends Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      contactName: '',
-      email: '',
-      phone: '',
-      message: ''
+      contactName: "",
+      email: "",
+      phone: "",
+      message: "",
     };
-    this.handleInputChange = this.handleInputChange.bind(this);  
-   this.sendMail = this.sendMail.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.sendMail = this.sendMail.bind(this);
   }
 
-  handleInputChange(event) {  
-    const target = event.target;  
-    const value =  target.value;  
-    const name = target.name;  
-    this.setState({  
-        [name]: value  
-    });  
-}  
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+    this.setState({
+      [name]: value,
+    });
+  }
 
   set = [
     { title: "Tech Transformation", src: serImg1 },
@@ -99,7 +98,7 @@ export default class HomeScreen extends Component {
     stackImg9,
   ];
 
-x
+  x;
 
   sendMail(event) {
     event.preventDefault();
@@ -108,25 +107,32 @@ x
       from_name: this.state.contactName,
       email: this.state.email,
       phone: this.state.phone,
-      message: this.state.message
-  };
+      message: this.state.message,
+    };
 
-    emailjs.send('service_v4ls8np', 'template_wdcsx3k', templateParams, 'UMXQFQwixnYKhCd0f')
-    .then((result) => {
-        console.log(" Mail sent", result.text);
-    }, (error) => {
-        console.log(error.text);
-    });
+    emailjs
+      .send(
+        "service_v4ls8np",
+        "template_wdcsx3k",
+        templateParams,
+        "UMXQFQwixnYKhCd0f"
+      )
+      .then(
+        (result) => {
+          console.log(" Mail sent", result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     this.setState({
-      contactName: '',
-      email: '',
-      phone: '',
-      message: ''
+      contactName: "",
+      email: "",
+      phone: "",
+      message: "",
     });
   }
-
-
 
   render() {
     const contacrRef = React.createRef(null);
@@ -361,15 +367,41 @@ x
           {/*//////////////////////////////////////////////////////// CONTACT ///////////////////////////////////////////////////////// */}
           {/*//////////////////////////////////////////////////////// CONTACT ///////////////////////////////////////////////////////// */}
           {/*//////////////////////////////////////////////////////// CONTACT ///////////////////////////////////////////////////////// */}
-          <div className="hmH">
+          <div className="hmH" ref={contacrRef}>
             <form onSubmit={this.sendMail} className="hmHa">
               <div className="hmHb">CONTACT US</div>
-              <input className="hmHc" name="contactName" placeholder="Full Name"  value={this.state.contactName} onChange={this.handleInputChange}/>
-              <input className="hmHc" name="email" placeholder="Email ID" value={this.state.email} onChange={this.handleInputChange}/>
-              <input className="hmHc" name="phone" placeholder="Phone Number" value={this.state.phone} onChange={this.handleInputChange}/>
-              <textarea className="hmHd" name="message" placeholder="Message" value={this.state.message} onChange={this.handleInputChange} />
-              <button className="hmHg" type="submit">SEND ENQUIRY</button>
-              </form>
+              <input
+                className="hmHc"
+                name="contactName"
+                placeholder="Full Name"
+                value={this.state.contactName}
+                onChange={this.handleInputChange}
+              />
+              <input
+                className="hmHc"
+                name="email"
+                placeholder="Email ID"
+                value={this.state.email}
+                onChange={this.handleInputChange}
+              />
+              <input
+                className="hmHc"
+                name="phone"
+                placeholder="Phone Number"
+                value={this.state.phone}
+                onChange={this.handleInputChange}
+              />
+              <textarea
+                className="hmHd"
+                name="message"
+                placeholder="Message"
+                value={this.state.message}
+                onChange={this.handleInputChange}
+              />
+              <button className="hmHg" type="submit">
+                SEND ENQUIRY
+              </button>
+            </form>
             <div className="hmHh">
               <div>
                 <div className="hmHi"></div>
